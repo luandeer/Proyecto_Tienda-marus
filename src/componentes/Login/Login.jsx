@@ -10,7 +10,7 @@ const Login = () => {
                 <p className="subtitle">Ingrese nueva contraseña para tu cuenta</p>
 
                 <form action="/" className="form">
-                    <label for="password" className="label">
+                    <label htmlFor="password" className="label">
                         Contraseña
                     </label>
                     <input
@@ -20,7 +20,7 @@ const Login = () => {
                         className="input input-password"
                     />
 
-                    <label for="new-password" className="label">
+                    <label htmlFor="new-password" className="label">
                         Confirme Contraseña
                     </label>
                     <input
