@@ -31,6 +31,14 @@ nav {
 	margin-left: 12px;
 	gap: 5px;
 }
+
+.navbar-left ul li{
+	transition: all 400ms ease;
+}
+.navbar-left ul li:hover{
+	transform: scale(0.92);
+}
+
 .navbar-left ul li a,
 .navbar-right ul li a {
 	text-decoration: none;
@@ -53,7 +61,14 @@ nav {
 	font-size: 25px;
 	color: var(--very-light-pink);
 	position: relative;
+	transition: all 400ms ease;
 }
+
+.navbar-shopping-cart:hover {
+	transform: scale(0.92);
+	cursor: pointer;
+}
+
 .navbar-shopping-cart div {
 	width: 16px;
 	height: 16px;
@@ -68,7 +83,29 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	animation-name: cart;
+	animation-duration: .7s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	
+	
 }
+.navbar-shopping-cart div:hover {
+	animation-play-state: paused;
+	
+	
+}
+
+@keyframes cart {
+	0%{
+		transform: scale(0.8);
+	}
+	100%{
+		transform: scale(0.95);
+	}
+}
+
 @media (max-width: 640px) {
 	.menu {
 		display: block;

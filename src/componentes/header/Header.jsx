@@ -22,7 +22,7 @@ const Header = () => {
 				<img src={logo} alt="logo" className="nav-logo" />
 				<ul>
 					<li>
-						<a href="/">All</a>
+						<a href="/">Todos</a>
 					</li>
 					<li>
 						<a href="/">Clothes</a>
@@ -44,7 +44,7 @@ const Header = () => {
 			<div className="navbar-right">
 				<ul>
 					<li className="navbar-email" onClick={handleToggle}>
-						platzi@example.com
+						prueba@example.com
 					</li>
 					<li
 						className="navbar-shopping-cart"
