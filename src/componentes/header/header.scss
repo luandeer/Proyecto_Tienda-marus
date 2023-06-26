@@ -86,15 +86,8 @@ nav {
 	animation-name: cart;
 	animation-duration: .7s;
 	animation-timing-function: ease;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
-	
-	
-}
-.navbar-shopping-cart div:hover {
-	animation-play-state: paused;
-	
-	
+	animation-iteration-count: 15;
+	animation-direction: alternate;	
 }
 
 @keyframes cart {
